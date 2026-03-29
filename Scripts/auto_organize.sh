@@ -2,7 +2,7 @@
 # Auto-organize hook for Claude Code
 # Reads the file path from the Edit/Write tool event and moves if needed
 
-VAULT="C:/Users/Administrator/ObsidianVault"
+VAULT="C:/Users/Administrator/Desktop/Akiva's life"
 
 # Read the tool result from stdin (JSON with file_path)
 INPUT=$(cat)
