@@ -4,6 +4,7 @@ tags: [daily]
 mood:
 sleep_hours:
 energy:
+the_thing: 0
 ---
 # {{date}} — יומן
 
@@ -12,3 +13,11 @@ energy:
 ## למידה
 
 ## הערות
+
+## הדבר
+
+| | פרט |
+|---|---|
+| פעמים | 0 |
+| טריגר | — |
+| streak | |
