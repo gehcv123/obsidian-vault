@@ -7,9 +7,9 @@ tags: [dashboard]
 
 ## Recent Journal Entries
 
-| Date | Mood | Sleep | Energy |
-|------|------|-------|--------|
-| 2026-03-29 | 4 |  | 3 |
+| Date | Mood | Sleep | Energy | הדבר |
+|------|------|-------|--------|------|
+| 2026-03-29 | 4 |  | 3 | 1 |
 
 ## Active Projects
 
@@ -19,15 +19,17 @@ tags: [dashboard]
 
 ## Recent Notes
 
-- [[Suits]] — 2026-03-29 18:10
-- [[מנור]] — 2026-03-29 18:10
-- [[כוכב הצפון]] — 2026-03-29 18:10
-- [[2026-03-29]] — 2026-03-29 18:10
-- [[CLAUDE]] — 2026-03-29 15:43
-- [[README]] — 2026-03-29 14:07
+- 2026-03-29 — 2026-03-29 18:15
+- README — 2026-03-29 18:13
+- CLAUDE — 2026-03-29 18:13
+- מנור — 2026-03-29 18:13
+- כוכב הצפון — 2026-03-29 18:13
+- Suits — 2026-03-29 18:13
+- create a link — 2026-03-29 14:23
+- Welcome — 2026-03-29 14:22
 
 ## Statistics
 
-- Total notes: 6
-- Total WikiLinks: 7
+- Total notes: 8
+- Total WikiLinks: 8
 - Top tags: `daily` (1), `tv-show` (1), `project` (1), `person` (1)

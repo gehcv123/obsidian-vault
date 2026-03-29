@@ -139,8 +139,8 @@ def build_journal_section(root: Path) -> str:
     lines = [
         "## Recent Journal Entries",
         "",
-        "| Date | Mood | Sleep | Energy |",
-        "|------|------|-------|--------|",
+        "| Date | Mood | Sleep | Energy | הדבר |",
+        "|------|------|-------|--------|------|",
     ]
     if not entries:
         lines.append("| *No entries yet* | | | |")
@@ -149,7 +149,9 @@ def build_journal_section(root: Path) -> str:
             mood = fm.get("mood", "") or ""
             sleep = fm.get("sleep_hours", "") or ""
             energy = fm.get("energy", "") or ""
-            lines.append(f"| {date_str} | {mood} | {sleep} | {energy} |")
+            the_thing = fm.get("the_thing", "") or ""
+            thing_display = f"{'✓' if str(the_thing) == '0' else the_thing}" if the_thing != "" else ""
+            lines.append(f"| {date_str} | {mood} | {sleep} | {energy} | {thing_display} |")
     return "\n".join(lines)
 
 
@@ -210,7 +212,7 @@ def build_recent_notes_section(root: Path) -> str:
             modified = datetime.fromtimestamp(mtime).strftime("%Y-%m-%d %H:%M")
             # Use wiki-link style for Obsidian — strip .md extension
             note_name = fpath.stem
-            lines.append(f"- [[{note_name}]] — {modified}")
+            lines.append(f"- {note_name} — {modified}")
     return "\n".join(lines)
 
 
