@@ -46,7 +46,7 @@ Use templates from `Templates/` when creating new notes:
 ## Commit Rules
 After every change to the Vault:
 ```bash
-cd C:/Users/Administrator/ObsidianVault
+cd "C:/Users/Administrator/Desktop/Akiva's life"
 git add -A
 git commit -m "<type>: <description>"
 git push

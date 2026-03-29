@@ -9,7 +9,7 @@ tags: [dashboard]
 
 | Date | Mood | Sleep | Energy | הדבר |
 |------|------|-------|--------|------|
-| 2026-03-29 | 4 |  | 3 | 1 |
+| 2026-03-29 | 4 |  | 3 | 1 ✗ |
 
 ## Active Projects
 
@@ -19,9 +19,11 @@ tags: [dashboard]
 
 ## Recent Notes
 
-- 2026-03-29 — 2026-03-29 18:15
+- CLAUDE — 2026-03-29 18:34
+- Claude — 2026-03-29 18:23
+- 2026-03-29 — 2026-03-29 18:22
+- הדבר — 2026-03-29 18:19
 - README — 2026-03-29 18:13
-- CLAUDE — 2026-03-29 18:13
 - מנור — 2026-03-29 18:13
 - כוכב הצפון — 2026-03-29 18:13
 - Suits — 2026-03-29 18:13
@@ -30,6 +32,6 @@ tags: [dashboard]
 
 ## Statistics
 
-- Total notes: 8
-- Total WikiLinks: 8
-- Top tags: `daily` (1), `tv-show` (1), `project` (1), `person` (1)
+- Total notes: 10
+- Total WikiLinks: 12
+- Top tags: `daily` (1), `tool` (1), `ai` (1), `tv-show` (1), `habit-tracking` (1)

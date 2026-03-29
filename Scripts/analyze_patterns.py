@@ -10,12 +10,16 @@ Usage:
     python Scripts/analyze_patterns.py --min 14 # require minimum entries
 """
 
+import io
 import json
 import os
 import re
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
+
+# Fix Windows stdout encoding for Hebrew/Unicode
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 # ---------------------------------------------------------------------------
 # Vault path resolution
@@ -198,9 +202,9 @@ def pearson_r(xs: list[float], ys: list[float]) -> float | None:
 def compute_correlations(entries: list[dict]) -> dict:
     """Compute pairwise correlations between mood, sleep, energy."""
     pairs = [
-        ("sleep_hours", "mood", "שינה ↔ מצב רוח"),
-        ("sleep_hours", "energy", "שינה ↔ אנרגיה"),
-        ("energy", "mood", "אנרגיה ↔ מצב רוח"),
+        ("sleep_hours", "mood", "sleep <> mood"),
+        ("sleep_hours", "energy", "sleep <> energy"),
+        ("energy", "mood", "energy <> mood"),
     ]
     results = {}
     for key_a, key_b, label in pairs:

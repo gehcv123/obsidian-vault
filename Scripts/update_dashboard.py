@@ -150,7 +150,12 @@ def build_journal_section(root: Path) -> str:
             sleep = fm.get("sleep_hours", "") or ""
             energy = fm.get("energy", "") or ""
             the_thing = fm.get("the_thing", "") or ""
-            thing_display = f"{'✓' if str(the_thing) == '0' else the_thing}" if the_thing != "" else ""
+            if the_thing == "":
+                thing_display = ""
+            elif str(the_thing) == "0":
+                thing_display = "0 ✓"
+            else:
+                thing_display = f"{the_thing} ✗"
             lines.append(f"| {date_str} | {mood} | {sleep} | {energy} | {thing_display} |")
     return "\n".join(lines)
 
