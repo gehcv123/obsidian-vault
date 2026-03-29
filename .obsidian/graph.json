@@ -1,6 +1,6 @@
 {
   "collapse-filter": true,
-  "search": "",
+  "search": "-file:Dashboard -file:CLAUDE -file:README -file:Welcome -file:\"create a link\" -path:Templates -path:Scripts",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
